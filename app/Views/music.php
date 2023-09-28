@@ -56,8 +56,8 @@
 </head>
 <body>
 
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Add Music-->
+  <div class="modal fade" id="addAudio" tabindex="-1" aria-labelledby="addAudioLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -93,17 +93,17 @@
           <h5 class="modal-title" id="exampleModalLabel">Add </h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <br>
+          <div class="modal-body">
+            <br>
 
-          <form action="/psave" method="post">
-          <input type="hidden" name="playid" value="<?= $prod['playid'] ?? '' ?>">
-          <input type="text" name="playlist" placeholder="playlist" value="<?= $_POST['playlist'] ?? $pl['playlist'] ?? '' ?>">
+            <form action="/psave" method="post">
+            <input type="hidden" name="playid" value="<?= $prod['playid'] ?? '' ?>">
+            <input type="text" name="playlist" placeholder="playlist" value="<?= $_POST['playlist'] ?? $pl['playlist'] ?? '' ?>">
 
-          </form>
+            </form>
 
 
-        </div>
+          </div>
         <div class="modal-footer">
           <a href="#" data-bs-dismiss="modal">Close</a>
           <a href="#createplaylist" data-bs-toggle="modal" data-bs-target="#createPlaylist" type="submit">Create</a>
