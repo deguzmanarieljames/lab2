@@ -7,13 +7,13 @@ use CodeIgniter\Model;
 class PlaylistModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'playlisttbl';
-    protected $primaryKey       = 'plid';
+    protected $table            = 'playlist_tbl';
+    protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['playlist'];
+    protected $allowedFields    = ['name'];
 
     // Dates
     protected $useTimestamps = false;
