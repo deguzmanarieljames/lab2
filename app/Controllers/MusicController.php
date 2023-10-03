@@ -20,7 +20,7 @@ class MusicController extends BaseController
 
     public function index()
     {
-        $data['playlist'] = $this->playlist->findAll();
+        $data['playlists'] = $this->playlist->findAll();
         $data['music'] = $this->music->findAll();
         return view('music', $data);
     }

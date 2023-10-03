@@ -143,7 +143,7 @@
                 <div class="modal-body">
                     <br>
                     <ul class="list-unstyled mt-3">
-                        <?php foreach ($playlist as $play) : ?>
+                        <?php foreach ($playlists as $play) : ?>
                             <li>
                                 <a href="/playlist/<?= $play['id'] ?>">
                                     <?= $play['name'] ?>
@@ -208,7 +208,7 @@
                         <!-- <p id="modalData"></p> -->
                         <input type="hidden" id="musicID" name="musicID" value="">
                         <select name="playlist" class="form-control">
-                            <?php foreach ($playlist as $play) : ?>
+                            <?php foreach ($playlists as $play) : ?>
                                 <option value="<?= $play['id'] ?>"><?= $play['name'] ?></option>
                             <?php endforeach; ?>
                         </select>
