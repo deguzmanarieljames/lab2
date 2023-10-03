@@ -145,7 +145,7 @@
                     <ul class="list-unstyled mt-3">
                         <?php foreach ($playlists as $play) : ?>
                             <li>
-                                <a href="/playlist/<?= $play['id'] ?>">
+                                <a href="/playlists/<?= $play['id'] ?>">
                                     <?= $play['name'] ?>
                                 </a>
                             </li>

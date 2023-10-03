@@ -67,7 +67,7 @@ class MusicController extends BaseController
         $search = $this->request->getGet('title');
         $musicResults = $this->music->like('title', '%' . $search . '%')->findAll();
         $data = [
-            'playlists' => $this->playlist->findAll(),
+            'playlist' => $this->playlist->findAll(),
             'music' => $musicResults,
         ];
         return view('music', $data);
